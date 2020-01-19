@@ -1,0 +1,11 @@
+<p>
+Brewery: <%= @brewery.name %></br>
+
+<% @beers.each do |beer| %>
+  <div>
+    Name: <a href="/beers/<%=beer.id%>"><%= beer.name %></a></br>
+    Style: <%= beer.style %> </br>
+    Score: <%= beer.score %> </br>
+    </br>
+  </div>
+<% end %>
